@@ -7,7 +7,7 @@
       <root url="file://$PROJECT_DIR$/../.." />
     </SOURCES>
     <excluded>
-      <root url="file://$PROJECT_DIR$" />
+      <root url="file://$PROJECT_DIR$/../golang-course" />
     </excluded>
   </library>
 </component>
