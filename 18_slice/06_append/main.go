@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	greetings := make([]string, 3, 5)
 
@@ -8,5 +10,10 @@ func main() {
 	greetings[2] = "Xin chao"
 	//greetings[3] = "bonjour"
 
-	append(greetings, "bonjour")
+	greetings = append(greetings, "bonjour")
+	greetings = append(greetings, "gidday")
+	greetings = append(greetings, "Suprabadham")
+
+	fmt.Println(greetings)
+	fmt.Println(cap(greetings))
 }

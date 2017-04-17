@@ -1,1 +1,11 @@
-package _1_rune_are_numbers
+package main
+
+import "fmt"
+
+func main() {
+	letter := 'A'
+
+	fmt.Println(letter)
+
+	fmt.Printf("%T \n", letter)
+}

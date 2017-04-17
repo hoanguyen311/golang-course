@@ -1,1 +1,10 @@
-package _7_append_slice_to_a_slice
+package main
+
+import "fmt"
+
+func main() {
+	mySlice := []string{"Monday", "Tuesday"}
+	myOtherSlice := []string{"Wednesday", "Thursday", "Friday"}
+
+	fmt.Println(append(mySlice, myOtherSlice...))
+}

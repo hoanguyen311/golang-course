@@ -1,1 +1,10 @@
-package _2_runes_are_string
+package main
+
+import "fmt"
+
+func main() {
+	str := "Ab"
+	letter := rune(str[0])
+	fmt.Println(letter)
+	fmt.Printf("%T \n", letter)
+}

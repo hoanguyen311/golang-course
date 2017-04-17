@@ -2,18 +2,21 @@ package main
 
 import "fmt"
 
-type person struct {
-	firstName string
-	lastName string
-	age int
-}
+type foo int
 
 func main() {
-	p1 := person{"Hoa", "Nguyen", 26}
-	p2 := person{"Cuc", "Phan", 22}
-	p3 := person{}
+	var myAge foo
 
-	fmt.Println(p1.firstName, p1.lastName, p1.age)
-	fmt.Println(p2.firstName, p2.lastName, p2.age)
-	fmt.Println(p3.age)
+	myAge = 26
+
+	fmt.Printf("%T %v\n", myAge, myAge)
+
+	var yourAge int
+
+	yourAge = 22
+
+	fmt.Printf("%T %v\n", yourAge, yourAge)
+
+	//fmt.Println(myAge + yourAge)
+	fmt.Println(int(myAge) + yourAge)
 }

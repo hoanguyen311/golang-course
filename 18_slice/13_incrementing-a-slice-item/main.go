@@ -1,1 +1,12 @@
-package _3_incrementing_a_slice_item
+package main
+
+import "fmt"
+
+func main() {
+	mySlice := make([]int, 1)
+
+	mySlice[0] = 7
+	fmt.Println(mySlice)
+	mySlice[0]++
+	fmt.Println(mySlice)
+}
